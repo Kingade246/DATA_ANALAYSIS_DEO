@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis - Next Steps</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+            .hero {
+                background: rgba(20, 30, 50, 0.92);
+                border-radius: 16px;
+                box-shadow: 0 0 24px #000a, 0 2px 8px rgba(44,62,80,0.18);
+                padding: 40px 20px 20px 20px;
+                margin-bottom: 24px;
+            }
+            .hero h1, h2 {
+                color: #fff;
+                text-shadow: 0 2px 12px #000, 0 0 24px #0ff;
+            }
+            .hero p {
+                color: #e0e0e0;
+                text-shadow: 0 2px 8px #000;
+            }
+            .steps .step-card {
+                background: rgba(20, 30, 50, 0.97);
+                color: #fff;
+            }
+            .steps .step-card div {
+                color: #fff;
+                text-shadow: 0 2px 8px #000;
+            }
+            .steps .step-card small {
+                color: #e0e0e0;
+                text-shadow: 0 2px 8px #000;
+            }
+            .actions button, .back-link button {
+                color: #fff;
+                text-shadow: 0 2px 8px #000;
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;500&display=swap');
+            body {
+                font-family: 'Roboto', Arial, sans-serif;
+                background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+                color: #fff;
+            }
+            .hero h1, h2 {
+                font-family: 'Orbitron', Arial, sans-serif;
+                font-size: 2.2em;
+                color: #00fff7;
+                text-shadow: 0 0 12px #00fff7, 0 0 24px #0ff;
+                letter-spacing: 2px;
+            }
+            .hero p, .steps .step-card small, .actions button, .back-link button, .steps .step-card div {
+                font-family: 'Roboto', Arial, sans-serif;
+                color: #fff;
+            }
+            .steps {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 18px;
+                margin-bottom: 30px;
+            }
+            .step-card {
+                background: rgba(20, 30, 50, 0.95);
+                border-radius: 12px;
+                box-shadow: 0 0 24px #00fff7, 0 2px 8px rgba(44,62,80,0.18);
+                padding: 22px 26px;
+                min-width: 160px;
+                text-align: center;
+                font-weight: 500;
+                color: #fff;
+                transition: transform 0.2s, box-shadow 0.2s;
+            }
+            .step-card:hover {
+                transform: translateY(-4px) scale(1.07);
+                box-shadow: 0 0 32px #00fff7, 0 6px 18px rgba(44,62,80,0.23);
+            }
+            .step-card img {
+                filter: drop-shadow(0 0 8px #00fff7);
+            }
+            .custom-btn {
+                background: linear-gradient(90deg, #00fff7 0%, #4a00e0 100%);
+                color: #0f2027;
+                border: none;
+                border-radius: 10px;
+                padding: 14px 32px;
+                font-size: 1.1em;
+                font-family: 'Orbitron', Arial, sans-serif;
+                font-weight: 700;
+                cursor: pointer;
+                box-shadow: 0 0 16px #00fff7, 0 2px 8px rgba(44,62,80,0.18);
+                transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .custom-btn:hover {
+                background: linear-gradient(90deg, #4a00e0 0%, #00fff7 100%);
+                transform: scale(1.08);
+                box-shadow: 0 0 32px #00fff7, 0 6px 18px rgba(44,62,80,0.23);
+            }
+            .custom-btn .btn-icon {
+                width: 26px;
+                height: 26px;
+                filter: drop-shadow(0 0 8px #00fff7);
+            }
+            .actions {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 18px;
+                margin-bottom: 30px;
+            }
+            .back-link {
+                display: flex;
+                justify-content: center;
+            }
+            .back-link a {
+                text-decoration: none;
+            }
+            @media (max-width: 600px) {
+                .steps {
+                    flex-direction: column;
+                    gap: 12px;
+                }
+                .hero h1 {
+                    font-size: 1.3em;
+                }
+            }
+        .step-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+                    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;500&display=swap');
+                    body {
+                        font-family: 'Roboto', Arial, sans-serif;
+                        background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+                        color: #fff;
+                    }
+                    .hero h1, h2 {
+                        font-family: 'Orbitron', Arial, sans-serif;
+                        font-size: 2.2em;
+                        color: #00fff7;
+                        text-shadow: 0 0 12px #00fff7, 0 0 24px #0ff;
+                        letter-spacing: 2px;
+                    }
+                    .hero p, .steps .step-card small, .actions button, .back-link button, .steps .step-card div {
+                        font-family: 'Roboto', Arial, sans-serif;
+                        color: #fff;
+                    }
+                    .steps {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 18px;
+                        margin-bottom: 30px;
+                    }
+                    .step-card {
+                        background: rgba(20, 30, 50, 0.95);
+                        border-radius: 12px;
+                        box-shadow: 0 0 24px #00fff7, 0 2px 8px rgba(44,62,80,0.18);
+                        padding: 22px 26px;
+                        min-width: 160px;
+                        text-align: center;
+                        font-weight: 500;
+                        color: #fff;
+                        transition: transform 0.2s, box-shadow 0.2s;
+                    }
+                    .step-card:hover {
+                        transform: translateY(-4px) scale(1.07);
+                        box-shadow: 0 0 32px #00fff7, 0 6px 18px rgba(44,62,80,0.23);
+                    }
+                    .step-card img {
+                        filter: drop-shadow(0 0 8px #00fff7);
+                    }
+                    .custom-btn {
+                        background: linear-gradient(90deg, #00fff7 0%, #4a00e0 100%);
+                        color: #0f2027;
+                        border: none;
+                        border-radius: 10px;
+                        padding: 14px 32px;
+                        font-size: 1.1em;
+                        font-family: 'Orbitron', Arial, sans-serif;
+                        font-weight: 700;
+                        cursor: pointer;
+                        box-shadow: 0 0 16px #00fff7, 0 2px 8px rgba(44,62,80,0.18);
+                        transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    .custom-btn:hover {
+                        background: linear-gradient(90deg, #4a00e0 0%, #00fff7 100%);
+                        transform: scale(1.08);
+                        box-shadow: 0 0 32px #00fff7, 0 6px 18px rgba(44,62,80,0.23);
+                    }
+                    .custom-btn .btn-icon {
+                        width: 26px;
+                        height: 26px;
+                        filter: drop-shadow(0 0 8px #00fff7);
+                    }
+                    .actions {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 18px;
+                        margin-bottom: 30px;
+                    }
+                    .back-link {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .back-link a {
+                        text-decoration: none;
+                    }
+                    @media (max-width: 600px) {
+                        .steps {
+                            flex-direction: column;
+                            gap: 12px;
+                        }
+                        .hero h1 {
+                            font-size: 1.3em;
+                        }
+                    }
+            padding: 18px 22px;
+            min-width: 140px;
+            text-align: center;
+            font-weight: 500;
+            color: #2c3e50;
+            transition: transform 0.2s;
+        }
+        .step-card:hover {
+            transform: translateY(-4px) scale(1.04);
+            box-shadow: 0 6px 18px rgba(44,62,80,0.13);
+        }
+        .actions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+        .custom-btn {
+            background: linear-gradient(90deg, #2980b9 0%, #6dd5fa 100%);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 28px;
+            font-size: 1em;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .custom-btn:hover {
+            background: linear-gradient(90deg, #6dd5fa 0%, #2980b9 100%);
+            transform: scale(1.05);
+        }
+        .back-link {
+            display: flex;
+            justify-content: center;
+        }
+        .back-link a {
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .steps {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .hero h1 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+           <h1>Next Steps in Data Analysis</h1>
+           <p>Continue your journey: explore advanced analytics, share results, or return to the dashboard.</p>
+           <img src="https://cdn.pixabay.com/photo/2015/05/31/10/55/graphs-791404_1280.jpg" alt="Data Analysis Graphs" style="max-width: 100%; border-radius: 10px; margin: 18px auto; box-shadow: 0 2px 8px rgba(44,62,80,0.13);">
+           <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="Data Analysis Graph" style="max-width: 100%; border-radius: 10px; margin: 18px auto; box-shadow: 0 2px 8px rgba(44,62,80,0.13);">
+    </div>
+    <div class="steps">
+            <div class="step-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2917/2917992.png" alt="Advanced Analytics" style="width:40px; margin-bottom:8px;">
+                    <img src="https://cdn.pixabay.com/photo/2017/06/10/07/18/analytics-2389159_1280.jpg" alt="Interpretation" style="width:40px; margin-bottom:8px;">
+                <div>Advanced Analytics</div>
+                <small>Apply statistical and machine learning techniques for deeper insights.</small>
+            </div>
+            <div class="step-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2917/2917997.png" alt="Share Results" style="width:40px; margin-bottom:8px;">
+                <div>Share Results</div>
+                <small>Present findings to stakeholders with clear visualizations.</small>
+            </div>
+            <div class="step-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Export Data" style="width:40px; margin-bottom:8px;">
+                <div>Export Data</div>
+                <small>Download processed data for further use or reporting.</small>
+            </div>
+            <div class="step-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" alt="Return to Dashboard" style="width:40px; margin-bottom:8px;">
+                <div>Return to Dashboard</div>
+                <small>Go back to the main dashboard for more analysis.</small>
+            </div>
+    </div>
+    <div class="actions">
+            <button class="custom-btn" onclick="alert('Exporting data...')">
+                <img class="btn-icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Export">
+                Export Data
+            </button>
+            <button class="custom-btn" onclick="alert('Sharing results...')">
+                 <img class="btn-icon" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Share Results">
+                 Share Results
+            </button>
+            <button class="custom-btn" onclick="alert('Viewing analysis examples...')">
+                 <img class="btn-icon" src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="View Data Analysis Examples">
+                 View Data Analysis Examples
+            </button>
+    </div>
+    <div class="back-link">
+            <a href="main.html">
+                <button class="custom-btn">
+                    <img class="btn-icon" src="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" alt="Back">
+                        <img class="btn-icon" src="https://images.unsplash.com/photo-1465101178521-c1a4c8a0daf3?auto=format&fit=crop&w=400&q=80" alt="Upload Data">
+                    Back to Dashboard
+                </button>
+            </a>
+        </div>
+        <div style="text-align:center; margin:32px 0;">
+                <h2 style="font-family:'Montserrat',Arial,sans-serif; color:#000;">Watch: Data Analysis with Python</h2>
+                <div style="position:relative; width:100%; max-width:800px; margin:0 auto; aspect-ratio:16/9;">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/r-uOLxNrNk8" title="Data Analysis with Python - Full Course for Beginners (Numpy, Pandas, Matplotlib, Seaborn)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius:12px; box-shadow:0 2px 8px rgba(44,62,80,0.13);"></iframe>
+                </div>
+            <h2 style="font-family:'Montserrat',Arial,sans-serif; color:#000;">Why Data Analysis Matters</h2>
+            <p style="color:#000; max-width:500px; margin:0 auto;">Data analysis empowers organizations to make evidence-based decisions, optimize processes, and discover new opportunities. It is the foundation of modern business intelligence and scientific research.</p>
+            <img src="https://cdn.pixabay.com/photo/2016/11/18/17/20/chart-1839215_1280.png" alt="Data Analysis Process" style="max-width: 60%; border-radius: 8px; margin: 18px auto; box-shadow: 0 2px 8px rgba(44,62,80,0.10);">
+                <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80" alt="Data Analysis Process" style="max-width: 60%; border-radius: 8px; margin: 18px auto; box-shadow: 0 2px 8px rgba(44,62,80,0.10);">
+        </div>
+    </div>
+</body>
+</html>
